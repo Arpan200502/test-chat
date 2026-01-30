@@ -15,12 +15,12 @@ wss.on("connection",ws =>{
                 }
             })
         })
-
-
-})
 ws.on("close", () => {
         console.log("Client disconnected");
     });
+
+})
+
 
 server.listen(PORT,()=>{
     console.log(`websocket server on http://localhost:${PORT}`)
